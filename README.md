@@ -1,3 +1,356 @@
+# Html_2024
+## What is HTML?
+- HTML stands for Hyper Text Markup Language
+- HTML is the standard markup language for creating Web pages
+- HTML describes the structure of a Web page
+- HTML consists of a series of elements
+- HTML elements tell the browser how to display the content
+- HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
+# A Simple HTML Document
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+```
+### Example Explained
+- The `<!DOCTYPE html>` declaration defines that this document is an HTML5 document
+- The `<html>` element is the root element of an HTML page
+- The `<head>` element contains meta information about the HTML page
+- The `<title>` element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+- The `<body>` element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+- The `<h1>` element defines a large heading
+- The `<p>` element defines a paragraph.
+
+# What is an HTML Element?
+An HTML element is defined by a start tag, some content, and an end tag:
+```html
+<tagname> Content goes here... </tagname>
+```
+The HTML `element` is everything from the start tag to the end tag:
+```html
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+```
+
+| Start tag | Element content | End tag |
+| --------- | --------------- | ------- |
+| `<h1>`    | My First Heading| `</h1>`|
+| `<p>`     | My first paragraph. | `</p>`|
+| `<br>`    | none            | none    |
+
+# Nested HTML Elements
+HTML elements can be nested (this means that elements can contain other elements).
+
+All HTML documents consist of nested HTML elements.
+
+The following example contains four HTML elements (`<html>`, `<body>`,` <h1>` and `<p>`):
+
+Example
+```htm
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+```
+Example Explained
+The `<html>` element is the root element and it defines the whole HTML document.
+
+It has a start tag <html> and an end tag `</html>`.
+
+Then, inside the `<html>` element there is a `<body>` element:
+```htm
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+```
+The `<body>` element defines the document's body.
+
+It has a start tag `<body>` and an end tag `</body>`.
+
+Then, inside the `<body>` element there are two other elements: `<h1>` and `<p>` :
+```htm
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+```
+The `<h1>` element defines a heading.
+
+It has a start tag `<h1>` and an end tag `</h1>`:
+```htm
+<h1>My First Heading</h1>
+```
+The `<p>` element defines a paragraph.
+
+It has a start tag `<p>` and an end tag `</p>`:
+```htm
+<p>My first paragraph.</p>
+```
+Never Skip the End Tag
+Some HTML elements will display correctly, even if you forget the end tag:
+
+Example
+```htm
+<html>
+<body>
+
+<p>This is a paragraph
+<p>This is a paragraph
+
+</body>
+</html>
+```
+# Empty HTML Elements
+HTML elements with no content are called empty elements.
+
+The `<br>` tag defines a line break, and is an empty element without a closing tag:
+
+Example
+```htm
+<p>This is a <br> paragraph with a line break.</p>
+```
+
+# Web Browsers
+The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
+
+A browser does not display the HTML tags, but uses them to determine how to display the document:
+![Chrome Logo](https://www.w3schools.com/html/img_chrome.png)
+
+# HTML Page Structure
+Below is a visualization of an HTML page structure:
+![Attribute Tuning HTML](https://bpdocs.blueprism.com/bp-7-0/en-us/Resources/Images/img-attribute-tuning/attribute-tuning-html.png)
+
+# HTML Editors
+# Learn HTML Using Notepad or TextEdit
+Web pages can be created and modified by using professional HTML editors.
+
+However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+
+We believe that using a simple text editor is a good way to learn HTML.
+
+Follow the steps below to create your first web page with Notepad or TextEdit.
+
+# Step 1: Open Notepad (PC)
+Windows 8 or later:
+
+Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad.
+
+Windows 7 or earlier:
+
+Open Start > Programs > Accessories > Notepad
+# Step 1: Open TextEdit (Mac)
+Open Finder > Applications > TextEdit
+
+Also change some preferences to get the application to save files correctly. In Preferences > Format > choose "Plain Text"
+
+Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".
+
+Then open a new document to place the code.
+
+# Step 2: Write Some HTML
+Write or copy the following HTML code into Notepad:
+
+```htm
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+```
+![Chrome Logo](https://www.w3schools.com/html/img_notepad.png)
+
+
+# Step 3: Save the HTML Page
+Save the file on your computer. Select File > Save as in the Notepad menu.
+
+Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).
+
+![Chrome Logo](https://www.w3schools.com/html/img_saveas.png)
+
+# Step 4: View the HTML Page in Your Browser
+Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").
+
+The result will look much like this:
+
+![chrome](https://www.w3schools.com/html/img_chrome.png)
+
+# HTML Basic Examples
+
+## HTML Documents
+All HTML documents must start with a document type declaration: `<!DOCTYPE html>`.
+
+The HTML document itself begins with `<html>` and ends with `</html>`.
+
+The visible part of the HTML document is between `<body>` and `</body>`.
+
+```htm
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+```
+# The <!DOCTYPE> Declaration
+The `<!DOCTYPE>` declaration represents the document type, and helps browsers to display web pages correctly.
+
+It must only appear once, at the top of the page (before any HTML tags).
+
+The `<!DOCTYPE>` declaration is not case sensitive.
+
+The `<!DOCTYPE>` declaration for HTML5 is:
+```htm
+<!DOCTYPE html>
+```
+
+# HTML Headings
+HTML headings are defined with the `<h1>` to `<h6>` tags.
+
+`<h1>` defines the most important heading. `<h6>` defines the least important heading: 
+```htm
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+```
+# HTML Paragraphs
+HTML paragraphs are defined with the `<p>` tag:
+
+Example
+```htm
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+```
+# HTML Links
+HTML links are defined with the `<a>` tag:
+Example
+```htm
+<a href="https://www.w3schools.com">This is a link</a>
+```
+The link's destination is specified in the href attribute. 
+
+Attributes are used to provide additional information about HTML elements.
+
+# HTML Images
+HTML images are defined with the `<img>` tag.
+
+The source file `(src)`, alternative text `(alt)`,`width`, and `height` are provided as attributes:
+
+Example
+```htm
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+```
+# HTML Attributes
+- All HTML elements can have attributes
+- Attributes provide additional information about elements
+- Attributes are always specified in the start tag
+- Attributes usually come in name/value pairs like: `name="value"`
+  
+The `href` Attribute
+The `<a>` tag defines a hyperlink. The `href` attribute specifies the URL of the page the link goes to:
+
+Example
+```htm
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+```
+# The src Attribute
+The `<img>` tag is used to embed an image in an HTML page. The `src` attribute specifies the path to the image to be displayed:
+
+Example
+```htm
+<img src="img_girl.jpg">
+```
+
+1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+
+Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+
+2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+
+# The width and height Attributes
+The `<img>` tag should also contain the `width` and `height` attributes, which specify the width and height of the image (in pixels):
+
+Example
+```img
+<img src="img_girl.jpg" width="500" height="600">
+```
+# The alt Attribute
+The required `alt` attribute for the `<img>` tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an `error` in the src attribute, or if the user uses a screen reader.
+
+Example
+```htm
+<img src="img_girl.jpg" alt="Girl with a jacket">
+```
+# The style Attribute
+The `style` attribute is used to add styles to an element, such as `color`, `font`, `size`, and more.
+
+Example
+```html
+<p style="color:red;">This is a red paragraph.</p>
+```
+# The lang Attribute
+You should always include the `lang` attribute inside the `<html>` tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+
+The following example specifies English as the language:
+```htm
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+```
+
+# The title Attribute
+The `title` attribute defines some extra information about an element.
+
+The value of the `title` attribute will be displayed as a tooltip when you mouse over the element:
+
+Example
+```htm
+<p title="I'm a tooltip">This is a paragraph.</p>
+```
+# Always Quote Attribute Values
+- Good:
+```htm
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+```
+- Bad:
+```htm
+<a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>
+```
+# Single or Double Quotes?
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+```htm
+<p title='John "ShotGun" Nelson'>
+//Or vice versa:
+
+<p title="John 'ShotGun' Nelson">
+```
 # CSS_2024 Learning
 # What is CSS?
 
