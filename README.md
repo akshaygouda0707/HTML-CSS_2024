@@ -351,6 +351,81 @@ Double quotes around attribute values are the most common in HTML, but single qu
 
 <p title="John 'ShotGun' Nelson">
 ```
+# HTML Headings
+HTML headings are titles or subtitles that you want to display on a webpage.
+
+HTML headings are defined with the `<h1>` to `<h6>` tags.
+
+`<h1>` defines the most important heading. `<h6>` defines the least important heading.
+
+Example
+```htm
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+# Bigger Headings
+Each HTML heading has a default size. However, you can specify the `size` for any heading with the `style` attribute, using the CSS `font-size` property:
+
+Example
+```htm
+<h1 style="font-size:60px;">Heading 1</h1>
+```
+# HTML Paragraphs
+The HTML `<p>` element defines a paragraph.
+
+A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+
+Example
+```htm
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+```
+# HTML Horizontal Rules
+The `<hr>` tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+
+The `<hr>` element is used to separate content (or define a change) in an HTML page:
+
+Example
+```htm
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+```
+# HTML Line Breaks
+The HTML `<br>` element defines a line break.
+
+Use `<br>` if you want a line break (a new line) without starting a new paragraph:
+
+Example
+```htm
+<p>This is<br>a paragraph<br>with line breaks.</p>
+```
+The `<br>` tag is an `empty tag`, which means that it has no end tag.
+
+# The HTML <pre> Element
+The HTML `<pre>` element defines preformatted text.
+
+The text inside a `<pre>` element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+
+Example
+```htm
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+```
 # CSS_2024 Learning
 # What is CSS?
 
